@@ -11,7 +11,7 @@ public class getUrlAndTitle {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://practise.cybertek.com");
+        driver.get("https://amazon.com");
         String title = driver.getTitle();
         System.out.println("title = " + title);
         String currentUrl = driver.getCurrentUrl();
