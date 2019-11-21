@@ -16,20 +16,22 @@ public class TestCase2 {
         WebElement clickSearch = driver.findElement(By.id("gh-btn"));
         clickSearch.click();
 
-        String expectedResult = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=selenium&_sacat=0";
-        String actualResult = driver.getCurrentUrl();
-
+       String expectedResult= "https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=selenium&_sacat=0";
+        String actualResult= driver.getCurrentUrl();
         if(expectedResult.equals(actualResult)){
 
             System.out.println("PASS");
         }else{
 
-            System.out.println("FAİL");
+            System.out.println("FAIL");
             System.out.println("actualResult = " + actualResult);
             System.out.println("expectedResult = " + expectedResult);
+
+
+
+
+
         }
-
-
 
     }
 }

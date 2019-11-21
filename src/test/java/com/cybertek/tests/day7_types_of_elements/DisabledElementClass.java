@@ -24,7 +24,7 @@ public class DisabledElementClass {
 
     }
     @Test
-public void Test2 (){
+    public void Test2 (){
     WebDriver driver = WebDriverFactory.getDriver("chrome");
     driver.manage().window().maximize();
     driver.get("http://practice.cybertekschool.com/dynamic_controls");
