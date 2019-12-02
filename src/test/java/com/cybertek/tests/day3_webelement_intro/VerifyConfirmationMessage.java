@@ -62,7 +62,7 @@ public class VerifyConfirmationMessage {
 
         }
         Thread.sleep(3000);
-        driver.quit();
+
     }
 
 
