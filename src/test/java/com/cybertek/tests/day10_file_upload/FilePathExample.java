@@ -14,6 +14,6 @@ public class FilePathExample {
 
         String filePath = projectPath+"/"+relativePath;
 
-
+        System.out.println(filePath);
     }
 }

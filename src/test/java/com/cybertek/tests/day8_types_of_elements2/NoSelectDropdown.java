@@ -21,7 +21,7 @@ public class NoSelectDropdown {
 
         List<WebElement> ListOfSite = driver.findElements(By.className("dropdown-item"));
 
-        ListOfSite.get(3);
+        ListOfSite.get(3).click();
 
 
     }
