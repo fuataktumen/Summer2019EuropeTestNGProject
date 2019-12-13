@@ -24,7 +24,7 @@ public class ExplicitWaitTest {
     @AfterMethod
     public void tearDownMethod() throws InterruptedException {
         Thread.sleep(3000);
-        driver.quit();
+
 
     }
 @Test
