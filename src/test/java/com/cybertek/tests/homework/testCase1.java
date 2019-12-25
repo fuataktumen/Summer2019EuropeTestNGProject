@@ -1,26 +1,19 @@
 package com.cybertek.tests.homework;
 
+import com.cybertek.pages.LoginPage;
+import com.cybertek.tests.TestBase;
+import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class testCase1 {
+public class testCase1 extends TestBase {
 
-    public static void main(String[] args) {
-
-        WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
-
-        driver.get("https://www.ebay.com/");
-        WebElement inputSearch = driver.findElement(By.xpath("//input[@label='Search for anything']"));
-        inputSearch.sendKeys("selenium");
-        WebElement clickSearch = driver.findElement(By.id("gh-btn"));
-        clickSearch.click();
-        System.out.println("2,160 results for selenium");
+    LoginPage LG = new LoginPage();
+    String username= ConfigurationReader.get("user_name");
+    String password = ConfigurationReader.get("password");
 
 
 
-
-    }
 }

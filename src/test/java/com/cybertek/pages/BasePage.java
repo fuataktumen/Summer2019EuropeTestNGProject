@@ -1,5 +1,6 @@
 package com.cybertek.pages;
 
+import com.cybertek.tests.day11_actions_isexecutor.JavaScriptsDemo;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
 import org.openqa.selenium.By;
@@ -42,6 +43,7 @@ public abstract class BasePage {
         waitUntilLoaderScreenDisappear();
 //        BrowserUtils.waitForStaleElement(pageSubTitle);
         return pageSubTitle.getText();
+
     }
 
 
