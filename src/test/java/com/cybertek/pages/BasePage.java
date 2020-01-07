@@ -1,6 +1,5 @@
 package com.cybertek.pages;
 
-import com.cybertek.tests.day11_actions_isexecutor.JavaScriptsDemo;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
 import org.openqa.selenium.By;
@@ -43,7 +42,6 @@ public abstract class BasePage {
         waitUntilLoaderScreenDisappear();
 //        BrowserUtils.waitForStaleElement(pageSubTitle);
         return pageSubTitle.getText();
-
     }
 
 
@@ -106,8 +104,8 @@ public abstract class BasePage {
             BrowserUtils.scrollToElement(Driver.get().findElement(By.xpath(moduleLocator)));
             Driver.get().findElement(By.xpath(moduleLocator)).click();
         } catch (Exception e) {
-//            BrowserUtils.waitForStaleElement(Driver.get().findElement(By.xpath(moduleLocator)));
-            BrowserUtils.clickWithTimeOut(Driver.get().findElement(By.xpath(moduleLocator)),  5);
+        //  BrowserUtils.waitForStaleElement(Driver.get().findElement(By.xpath(moduleLocator)));
+            BrowserUtils.clickWithTimeOut(Driver.get().findElement(By.xpath(moduleLocator)),  10);
         }
     }
 

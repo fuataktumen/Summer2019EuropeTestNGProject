@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytrack automation" verbose="1">
+    <test name="Vytrack smoke tests">
+      <classes>
+<class name="com.cybertek.tests.homework.TestCases4_26122019">
+
+    <methods>
+        <include name="repeat"></include>
+        <include name="repeatEvery"></include>
+
+    </methods>
+</class>
+      </classes>
+    </test>
+</suite>
+
+
+
+
+
+
+
+
+

@@ -49,6 +49,49 @@ public class CreateCalendarEventsPage extends BasePage {
     @FindBy(xpath = "(//input[@type='radio'])[5]")
     public WebElement by;
 
+    @FindBy(xpath = "//span[@class='caret']")
+    public WebElement SaveAndClose;
+
+    @FindBy (css = "[title='Cancel']")
+    public WebElement Cancel;
+
+    @FindBy (name= "oro_calendar_event_form[allDay]")
+    public WebElement allDay;
+
+    @FindBy (xpath = "(//input[@type='radio'])[1]" )
+    public WebElement repeatEvery;
+
+    @FindBy (css = ".control-group.recurrence-summary.alert-info")
+    public  WebElement summary;
+
+    @FindBy (xpath = "//input[@data-related-field='occurrences']")
+    public  WebElement afterInput;
+
+    @FindBy (xpath = "(//input[@placeholder='Choose a date'])[3]")
+    public WebElement ByInputDate;
+
+    @FindBy (css = ".ui-datepicker-year")
+    public WebElement ByInputYear;
+
+    @FindBy (css = ".ui-datepicker-month")
+    public WebElement ByInputMonth;
+
+    @FindBy(css = "[value='monday'][name^=re]")
+    public WebElement monday;
+
+    @FindBy(css = "[value='friday'][name^=re]")
+    public WebElement friday;
+
+
+
+
+
+
+
+
+
+
+
     public Select repeatOptionsList(){
         return new Select(repeatOptions);
     }
